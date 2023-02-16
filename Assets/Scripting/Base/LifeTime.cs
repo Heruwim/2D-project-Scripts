@@ -2,13 +2,26 @@ using UnityEngine;
 
 public class LifeTime : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        Debug.Log("Awake");
     }
 
-    // Update is called once per frame
+    private void OnEnable()
+    {
+        Debug.Log("OnEnable");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("OnDisable");
+    }
+
+    void Start()
+    {
+        Debug.Log("Start");
+    }
+
     void Update()
     {
         
